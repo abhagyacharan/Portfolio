@@ -50,7 +50,7 @@ body {
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 25px;
     transition: .3s;
 }
 
@@ -75,6 +75,11 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #00abf0;
 }
 
 .home-content h1::before {
@@ -93,11 +98,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
-}
-
-.home-content p {
-    font-size: 16px;
-    margin: 20px 0 40px;
 }
 
 .home-content .btn-box {
