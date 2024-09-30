@@ -13,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="#" class="logo">A Bhagya Charan</a>
+        <!-- <a href="#" class="logo">A Bhagya Charan</a> -->
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
@@ -34,6 +34,48 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Heyyy, I'm Bhagya Charan a.k.a Grogu. I'm just a loner trying to game my way out of depression.
+                        Making this site was easier than I thought lmfao. GG
+                    </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Gaming</span><br>Immortal in Valorant</li>
+                            <li><span>F1</span><br>	&#8734 Infinity</li>
+                            <li><span>HMTL/CSS/Coding</span><br>Edho koncham ala ala</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Gaming/F1</span><br>5000+ Hours</li>
+                            <li><span>Overthinking</span><br>420+ Hours</li>
+                            <li><span>Coding</span><br>69+ Hours</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Chappri</li>
+                            <li><span>2015-2019</span><br>Decent</li>
+                            <li><span>2002-2014</span><br>Bliss</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
         <div class="home-sci">
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#"><i class='bx bxl-linkedin-square'></i></a>
@@ -41,5 +83,20 @@
         </div>
     </section>
 
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
