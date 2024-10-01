@@ -13,7 +13,7 @@
 <body>
 
     <header class="header">
-        <!-- <a href="#" class="logo">A Bhagya Charan</a> -->
+        <a href="#" class="logo">ABC.</a>
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
@@ -33,48 +33,109 @@
                 <a href="#">Resume</a>
             </div>
         </div>
-
     </section>
 
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Heyyy, I'm Bhagya Charan a.k.a Grogu. I'm just a loner trying to game my way out of depression.
-                        Making this site was easier than I thought lmfao. GG
-                    </p>
-    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-content">
+            <h3>Software Developer</h3>
+            <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                artificial intelligence (AI) and machine learning with specific subject matter expertise
+                to uncover actionable insights hidden in an organization's data.</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2021 - 2025</div>
+                            <h3>B.Tech in Computer Science</h3>
+                            <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                to uncover actionable insights hidden in an organization's data.</p>
+                        </div>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Gaming</span><br>Immortal in Valorant</li>
-                            <li><span>F1</span><br>	&#8734 Infinity</li>
-                            <li><span>HMTL/CSS/Coding</span><br>Edho koncham ala ala</li>
-                        </ul>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2018 - 2020</div>
+                                <h3>Intermediate</h3>
+                                <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                    artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                    to uncover actionable insights hidden in an organization's data.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Gaming/F1</span><br>5000+ Hours</li>
-                            <li><span>Overthinking</span><br>420+ Hours</li>
-                            <li><span>Coding</span><br>69+ Hours</li>
-                        </ul>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2007 - 2018</div>
+                                <h3>Schooling</h3>
+                                <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                    artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                    to uncover actionable insights hidden in an organization's data.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019-2022</span><br>Chappri</li>
-                            <li><span>2015-2019</span><br>Decent</li>
-                            <li><span>2002-2014</span><br>Bliss</li>
-                        </ul>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2021 - 2025</div>
+                            <h3>Data Science</h3>
+                            <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                to uncover actionable insights hidden in an organization's data.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2018 - 2020</div>
+                                <h3>Machine Learning</h3>
+                                <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                    artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                    to uncover actionable insights hidden in an organization's data.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2007 - 2018</div>
+                                <h3>Deep Learning</h3>
+                                <p>Data science combines math and statistics, specialized programming, advanced analytics,
+                                    artificial intelligence (AI) and machine learning with specific subject matter expertise
+                                    to uncover actionable insights hidden in an organization's data.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="contact">
         <div class="home-sci">
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -84,19 +145,5 @@
     </section>
 
 
-    <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
 </body>
 </html>
