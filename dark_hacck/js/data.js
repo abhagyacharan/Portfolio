@@ -5,7 +5,7 @@ const data = {
             title: "Title 1",
             githubLink: "#",
             projectLink: "#",
-            imgLink: "images/portfolio/beach.jpg"
+            imgLink: "images/colorizer.png"
         },
         {
             techStack: "HTML, CSS, JS",

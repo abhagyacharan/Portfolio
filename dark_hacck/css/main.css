@@ -66,7 +66,7 @@
    *
    * ------------------------------------------------------------------- */
    :root {
-    --primary-color: #FF6C4D;
+    --primary-color: #406de7;
     /* --primary-color: #f9861a; */
    }
    
@@ -2436,3 +2436,27 @@
     }
   
   }
+
+.s-skills {
+    padding: 8rem 0;
+    background: #0b0a15; /* Matches theme */
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-box {
+    text-align: center;
+    padding: 4rem;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box h4 {
+    font-size: 2.4rem;
+    color: #000000; /* Matches text theme */
+}
